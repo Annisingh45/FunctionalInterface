@@ -2,14 +2,13 @@ package com.bridgelabz.supplier;
 
 import java.util.function.Supplier;
 
-public class Solution {
+public class OtpGenerator {
     public static void main(String[] args) {
-        Supplier<String> supplier=() ->
+        Supplier<String> supplier = () ->
         {
-            String otp=" ";
-            for (int i=1;i<=6;i++)
-            {
-                otp=otp+(int)(Math.random()*10);
+            String otp = " ";
+            for (int i = 1; i <= 6; i++) {
+                otp = otp + (int) (Math.random() * 10);
             }
             return otp;
         };
