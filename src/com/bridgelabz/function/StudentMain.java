@@ -1,12 +1,10 @@
-package com.bridgelabz;
-
-import com.bridgelabz.function.Student;
+package com.bridgelabz.function;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-public class SolutionMain {
+public class StudentMain {
     public static void main(String[] args) {
         List<Student> studentList = new ArrayList<>();
 
