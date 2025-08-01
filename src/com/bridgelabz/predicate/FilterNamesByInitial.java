@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class Solution {
+public class FilterNamesByInitial {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
         names.add("Anni");
@@ -21,6 +21,5 @@ public class Solution {
                 System.out.println(name);
             }
         }
-
     }
 }

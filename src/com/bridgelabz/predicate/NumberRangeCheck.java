@@ -2,14 +2,17 @@ package com.bridgelabz.predicate;
 
 import java.util.function.Predicate;
 
-public class Solution {
+public class NumberRangeCheck {
     public static void main(String[] args) {
-        Predicate<Integer> predicate1 = i -> i > 0;     // Checks if number is positive
-        Predicate<Integer> predicate2 = i -> i < 0;     // Checks if number is negative
+        Predicate<Integer> isGreaterThanZero = i -> i > 0;
+        Predicate<Integer> isLessThanHundred = i -> i < 100;
 
-        Predicate<Integer> predicate3 = predicate1.and(predicate2); // Logical AND of both
+        // Combined condition: number > 0 AND number < 100
+        Predicate<Integer> isInRange = isGreaterThanZero.and(isLessThanHundred);
 
-        System.out.println(predicate3.test(5));   // false
-        System.out.println(predicate3.test(-5));  // false
+
+        System.out.println(isInRange.test(50));  // true
+        System.out.println(isInRange.test(0));   // false
+        System.out.println(isInRange.test(150)); // false
     }
 }
